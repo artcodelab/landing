@@ -1,0 +1,78 @@
+<!-- Header -->
+<header id="home">
+    <!-- Background Image -->
+    <div class="bg-img" style="background-image: url('/themes/artcodelab/assets/images/background1.jpg');">
+        <div class="overlay"></div>
+    </div>
+    <!-- /Background Image -->
+
+    <!-- Nav -->
+    <nav id="nav" class="navbar nav-transparent">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Logo -->
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img class="logo" src="/themes/artcodelab/assets/images/logo.png" alt="artCodelab">
+                        <img class="logo-alt" src="/themes/artcodelab/assets/images/logo-alt.png" alt="artCodelab">
+                    </a>
+                </div>
+                <!-- /Logo -->
+
+                <!-- Collapse nav button -->
+                <div class="nav-collapse">
+                    <span></span>
+                </div>
+                <!-- /Collapse nav button -->
+            </div>
+
+            <!--  Main navigation  -->
+            <ul class="main-nav nav navbar-nav navbar-right">
+                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="#home">Inicio</a></li>
+                <li class="{% if this.page.id == 'about' %}active{% endif %}"><a href="#about">Acerca de</a></li>
+                <!--<li class="{% if this.page.id == 'portfolio' %}active{% endif %}"><a href="#portfolio">Portfolio</a></li>-->
+                <li class="{% if this.page.id == 'service' %}active{% endif %}"><a href="#service">Servicios</a></li>
+                <li class="{% if this.page.id == 'pricing' %}active{% endif %}"><a href="#pricing">Precios</a></li>
+                <li class="{% if this.page.id == 'team' %}active{% endif %}"><a href="#team">Equipo</a></li>
+<!--
+                <li class="has-dropdown"><a href="#blog">Blog</a>
+                    <ul class="dropdown">
+                        <li><a href="blog-single.html">blog post</a></li>
+                    </ul>
+                </li>
+-->
+                <li class="{% if this.page.id == 'contact' %}active{% endif %}"><a href="#contact">Contacto</a></li>
+            </ul>
+            <!-- /Main navigation -->
+
+        </div>
+    </nav>
+    <!-- /Nav -->
+
+    <!-- home wrapper -->
+    <div class="home-wrapper">
+        <div class="container">
+            <div class="row">
+
+                <!-- home content -->
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="home-content">
+                        <h1 class="white-text">Somos artCodelab</h1>
+                        <p class="white-text">
+                            Una Consultoría de Innovación en los negocios centrada en las necesidades de las empresas en donde generamos valor y rentabilidad para nuestros clientes.
+                        </p>
+<!--
+                        <button class="white-btn">Get Started!</button>
+                        <button class="main-btn">Learn more</button>
+-->
+                    </div>
+                </div>
+                <!-- /home content -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /home wrapper -->
+
+</header>
+<!-- /Header -->

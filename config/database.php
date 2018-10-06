@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'default' => 'mysql',
+    'default' => 'pgsql',
 
     /*
     |--------------------------------------------------------------------------
@@ -56,9 +56,9 @@ return [
             'driver'    => 'mysql',
             'host'      => 'localhost',
             'port'      => 3306,
-            'database'  => 'database',
+            'database'  => 'artcodelab',
             'username'  => 'root',
-            'password'  => '',
+            'password'  => 'root',
             'charset'   => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix'    => '',
@@ -66,11 +66,11 @@ return [
 
         'pgsql' => [
             'driver'   => 'pgsql',
-            'host'     => 'localhost',
+            'host'     => '127.0.0.1',
             'port'     => 5432,
-            'database' => 'database',
-            'username' => 'root',
-            'password' => '',
+            'database' => 'artcodelab',
+            'username' => 'postgres',
+            'password' => 'conde',
             'charset'  => 'utf8',
             'prefix'   => '',
             'schema'   => 'public',

@@ -1,0 +1,76 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>artCodelab - {{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="artCodelab">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link rel="icon" type="image/png" href="{{ '/assets/images/artcodelab_ico.png'|theme }}">
+<!--
+        <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+-->
+        <link href="{{ 'assets/css/bootstrap.min.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/font-awesome.min.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/magnific-popup.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/owl.carousel.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/owl.theme.default.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/style.css'|theme }}" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        {% styles %}
+    </head>
+
+
+    <body>
+
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial 'site/header' %}
+        </header>
+
+        <!-- Content -->
+        <section id="layout-content">
+            {% page %}
+        </section>
+
+        <!-- Footer -->
+        <footer id="layout-footer">
+            {% partial 'site/footer' %}
+        </footer>
+
+        <!-- Scripts -->
+        <!-- Back to top    -->
+        <div id="back-to-top"></div>
+        <!-- /Back to top -->
+
+        <!-- Preloader
+
+        <div id="preloader">
+            <div class="preloader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>-->
+        <!-- /Preloader -->
+
+        <script src="{{ 'assets/vendor/jquery.min.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/bootstrap.min.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/owl.carousel.min.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/jquery.magnific-popup.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/main.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+    </body>
+</html>

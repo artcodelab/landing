@@ -1,0 +1,11 @@
+name: artCodelab
+description: 'Sitio oficial de artCodelab'
+author: artCodelab
+homepage: 'http://www.artcodelab.com'
+code: ''
+form:
+    fields:
+        site_name:
+            label: artCodelab
+            comment: The website name as it should appear on the front-end
+            default: Laboratorio de código artesanal

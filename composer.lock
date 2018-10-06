@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "32f35ad3c0d4764f13a0345332dac9cd",
@@ -631,16 +631,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.5",
+            "version": "2.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "54859fabea8b3beecbb1a282888d5c990036b9e3"
+                "reference": "0578b32b30b22de3e8664f797cf846fc9246f786"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/54859fabea8b3beecbb1a282888d5c990036b9e3",
-                "reference": "54859fabea8b3beecbb1a282888d5c990036b9e3",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0578b32b30b22de3e8664f797cf846fc9246f786",
+                "reference": "0578b32b30b22de3e8664f797cf846fc9246f786",
                 "shasum": ""
             },
             "require": {
@@ -684,7 +684,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-08-16T20:49:45+00:00"
+            "time": "2018-09-25T20:47:26+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -778,32 +778,32 @@
         },
         {
             "name": "jakub-onderka/php-console-color",
-            "version": "0.1",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JakubOnderka/PHP-Console-Color.git",
-                "reference": "e0b393dacf7703fc36a4efc3df1435485197e6c1"
+                "reference": "d5deaecff52a0d61ccb613bb3804088da0307191"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JakubOnderka/PHP-Console-Color/zipball/e0b393dacf7703fc36a4efc3df1435485197e6c1",
-                "reference": "e0b393dacf7703fc36a4efc3df1435485197e6c1",
+                "url": "https://api.github.com/repos/JakubOnderka/PHP-Console-Color/zipball/d5deaecff52a0d61ccb613bb3804088da0307191",
+                "reference": "d5deaecff52a0d61ccb613bb3804088da0307191",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": ">=5.4.0"
             },
             "require-dev": {
                 "jakub-onderka/php-code-style": "1.0",
-                "jakub-onderka/php-parallel-lint": "0.*",
+                "jakub-onderka/php-parallel-lint": "1.0",
                 "jakub-onderka/php-var-dump-check": "0.*",
-                "phpunit/phpunit": "3.7.*",
+                "phpunit/phpunit": "~4.3",
                 "squizlabs/php_codesniffer": "1.*"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "JakubOnderka\\PhpConsoleColor": "src/"
+                "psr-4": {
+                    "JakubOnderka\\PhpConsoleColor\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -813,11 +813,10 @@
             "authors": [
                 {
                     "name": "Jakub Onderka",
-                    "email": "jakub.onderka@gmail.com",
-                    "homepage": "http://www.acci.cz"
+                    "email": "jakub.onderka@gmail.com"
                 }
             ],
-            "time": "2014-04-08T15:00:19+00:00"
+            "time": "2018-09-29T17:23:10+00:00"
         },
         {
             "name": "jakub-onderka/php-console-highlighter",
@@ -1007,16 +1006,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.5.43",
+            "version": "v5.5.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "84f4ed02ec6eb4a56629fb6acbee1df56891e3c7"
+                "reference": "00615aa27eb98f0ee6fb9f2160c6c60ae04abd1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/84f4ed02ec6eb4a56629fb6acbee1df56891e3c7",
-                "reference": "84f4ed02ec6eb4a56629fb6acbee1df56891e3c7",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/00615aa27eb98f0ee6fb9f2160c6c60ae04abd1b",
+                "reference": "00615aa27eb98f0ee6fb9f2160c6c60ae04abd1b",
                 "shasum": ""
             },
             "require": {
@@ -1137,7 +1136,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-09-02T11:45:05+00:00"
+            "time": "2018-10-04T14:51:24+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1682,16 +1681,16 @@
         },
         {
             "name": "october/backend",
-            "version": "v1.0.442",
+            "version": "v1.0.443",
             "source": {
                 "type": "git",
                 "url": "https://github.com/octoberrain/backend.git",
-                "reference": "84bf01bd7b326ec7bb41d57297ab255a0ae208f6"
+                "reference": "989c2d9ab766026301c200053567140d97237add"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/octoberrain/backend/zipball/84bf01bd7b326ec7bb41d57297ab255a0ae208f6",
-                "reference": "84bf01bd7b326ec7bb41d57297ab255a0ae208f6",
+                "url": "https://api.github.com/repos/octoberrain/backend/zipball/989c2d9ab766026301c200053567140d97237add",
+                "reference": "989c2d9ab766026301c200053567140d97237add",
                 "shasum": ""
             },
             "require": {
@@ -1737,20 +1736,20 @@
                 "october",
                 "october cms"
             ],
-            "time": "2018-08-29T02:19:33+00:00"
+            "time": "2018-09-23T01:22:02+00:00"
         },
         {
             "name": "october/cms",
-            "version": "v1.0.442",
+            "version": "v1.0.443",
             "source": {
                 "type": "git",
                 "url": "https://github.com/octoberrain/cms.git",
-                "reference": "60fda640d5452a1e7b79bb99d4c2aff5c5517a25"
+                "reference": "00da85e0a5036fddf5587ad1df108608eb10e1b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/octoberrain/cms/zipball/60fda640d5452a1e7b79bb99d4c2aff5c5517a25",
-                "reference": "60fda640d5452a1e7b79bb99d4c2aff5c5517a25",
+                "url": "https://api.github.com/repos/octoberrain/cms/zipball/00da85e0a5036fddf5587ad1df108608eb10e1b1",
+                "reference": "00da85e0a5036fddf5587ad1df108608eb10e1b1",
                 "shasum": ""
             },
             "require": {
@@ -1796,7 +1795,7 @@
                 "october",
                 "october cms"
             ],
-            "time": "2018-08-21T03:28:12+00:00"
+            "time": "2018-09-10T00:55:10+00:00"
         },
         {
             "name": "october/rain",
@@ -1899,16 +1898,16 @@
         },
         {
             "name": "october/system",
-            "version": "v1.0.442",
+            "version": "v1.0.443",
             "source": {
                 "type": "git",
                 "url": "https://github.com/octoberrain/system.git",
-                "reference": "1942134a7572251a039467281d998b336c2f6e93"
+                "reference": "2746a4433356e10a96dbdf8eaf9b069210fe4e74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/octoberrain/system/zipball/1942134a7572251a039467281d998b336c2f6e93",
-                "reference": "1942134a7572251a039467281d998b336c2f6e93",
+                "url": "https://api.github.com/repos/octoberrain/system/zipball/2746a4433356e10a96dbdf8eaf9b069210fe4e74",
+                "reference": "2746a4433356e10a96dbdf8eaf9b069210fe4e74",
                 "shasum": ""
             },
             "require": {
@@ -1954,7 +1953,7 @@
                 "october cms",
                 "system"
             ],
-            "time": "2018-08-23T16:00:51+00:00"
+            "time": "2018-09-24T22:54:16+00:00"
         },
         {
             "name": "oyejorge/less.php",
