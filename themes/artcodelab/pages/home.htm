@@ -1,8 +1,20 @@
 title = "Home"
 url = "/"
 layout = "default"
-==
+is_hidden = 0
 
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog/category"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 3
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
 <!-- About -->
 <div id="about" class="section md-padding">
 
@@ -21,9 +33,9 @@ layout = "default"
             <!-- about -->
             <div class="col-md-4">
                 <div class="about">
-                    <i class="fa fa-cogs"></i>
-                    <h3>Desarrollo a la medida</h3>
-                    <p>Hacemos que el software se adapte a la empresa y no le empresa al software, nuestros sistemas están en la nube 24/7.</p>
+                    <i class="fa fa-globe"></i>
+                    <h3>Misión</h3>
+                    <p>Ofrecer a nuestros clientes lo mejor de la tecnología, crecer junto con ellos desarrollando soluciones tecnológicas que permitan llegar a mas personas y la mejora de sus procesos. Formar parte de sus proyectos para trabajar como un solo equipo.</p>
                     <!--<a href="#">Read more</a>-->
                 </div>
             </div>
@@ -32,9 +44,9 @@ layout = "default"
             <!-- about -->
             <div class="col-md-4">
                 <div class="about">
-                    <i class="fa fa-magic"></i>
-                    <h3>Desarrollo de aplicaciones</h3>
-                    <p>Desarrollamos aplicaiones Web y móviles adaptamos ERP, CRM entre otras herramientas de gestión empresarial.</p>
+                    <i class="fa fa-eye"></i>
+                    <h3>Visión</h3>
+                    <p>Trascender como el mejor proveedor de servicios de tecnología. Construiremos el futuro de nuestra empresa generando socios de negocio. Proporcionamos servicios innovadores y de alta calidad, impulsados por la pasión de nuestra cultura</p>
                     <!--<a href="#">Read more</a>-->
                 </div>
             </div>
@@ -43,9 +55,9 @@ layout = "default"
             <!-- about -->
             <div class="col-md-4">
                 <div class="about">
-                    <i class="fa fa-mobile"></i>
-                    <h3>Soluciones tecnológicas</h3>
-                    <p>Sómos profesionales de las tecnologías de la información, telecomunicaciones, data center entre otros.</p>
+                    <i class="fa fa-handshake-o"></i>
+                    <h3>Valores</h3>
+                    <p>Integridad, pasión, honestidad, liderazgo,  credibilidad, responsabilidad, compromiso, honorabilidad solo son algunos de los valores tenemos como empresa e individualmente, lo que nos convierte en una empresa comprometida y responsable.</p>
                     <!--<a href="#">Read more</a>-->
                 </div>
             </div>
@@ -191,7 +203,7 @@ layout = "default"
                 <div class="section-header">
                     <h2>¿Por qué trabajar con nosotros?</h2>
                 </div>
-                <p>Porqué sómos un grupo de profesionales entusiastas que amamos la tecnología. Contamos con más de 13 años de experiencia en el desarrollo de sitios, portales y aplicaciones web.
+                <p>Porque sómos un grupo de profesionales entusiastas que amamos la tecnología. Contamos con más de 10 años de experiencia en el desarrollo de sitios, portales y aplicaciones web.
                 </p>
                 <div class="feature">
                     <i class="fa fa-check"></i>
@@ -254,19 +266,9 @@ layout = "default"
             <!-- service -->
             <div class="col-md-4 col-sm-6">
                 <div class="service">
-                    <i class="fa fa-cloud"></i>
-                    <h3>Sistemas a la medida</h3>
-                    <p>Nuestros sistemas estan en la nube, preocúpate solamente de contar con internet</p>
-                </div>
-            </div>
-            <!-- /service -->
-
-            <!-- service -->
-            <div class="col-md-4 col-sm-6">
-                <div class="service">
                     <i class="fa fa-mobile"></i>
-                    <h3>Desarrollo de Apps</h3>
-                    <p>Diseñamos y desarrollamos aplicaciones para IOS y Android, intuitivas y de facil uso.</p>
+                    <h3>Desarrollo de Aplicaciones</h3>
+                    <p>Desarrollamos Web apps y móviles, CMS, ERP, CRM, E-commerce entre otras herramientas de gestión empresarial, nuestros sistemas se encuentran con alta disponibilidad 24/7.</p>
                 </div>
             </div>
             <!-- /service -->
@@ -274,9 +276,9 @@ layout = "default"
             <!-- service -->
             <div class="col-md-4 col-sm-6">
                 <div class="service">
-                    <i class="fa fa-rocket"></i>
-                    <h3>Diseño de Sitios</h3>
-                    <p>Portales web, Administradores de Contenido, Blogs, Tiendas Virtuales.</p>
+                    <i class="fa fa-cloud"></i>
+                    <h3>Soluciones Tecnológicas</h3>
+                    <p>Sómos profesionales de las tecnologías de la información como redes, infraestructura, seguridad, migraciones, data analytics, soporte técnico, data center entre otras soluciones.</p>
                 </div>
             </div>
             <!-- /service -->
@@ -284,53 +286,12 @@ layout = "default"
             <!-- service -->
             <div class="col-md-4 col-sm-6">
                 <div class="service">
-                    <i class="fa fa-cogs"></i>
-                    <h3>Infraestructura y soporte</h3>
-                    <p>Registro de Dominios, Hosting, Sistemas a la medida en la nube, Redes y Seguridad.</p>
+                    <i class="fa fa-shopping-cart"></i>
+                    <h3>Soluciones de Marketing</h3>
+                    <p>Ayudamos a nuestros clientes a posicionarse en el mercado con soluciones como: Diseño y Posicionamiento de marca, Redes Sociales, Marketing Estratégico, Marketing Operativo</p>
                 </div>
             </div>
             <!-- /service -->
-
-            <!-- service -->
-            <div class="col-md-4 col-sm-6">
-                <div class="service">
-                    <i class="fa fa-trademark"></i>
-                    <h3>Posicionaiento de marca</h3>
-                    <p>Creamos y difundimos tu marca, la hacemos llegar a las personas indicadas.</p>
-                </div>
-            </div>
-            <!-- /service -->
-
-            <!-- service -->
-            <div class="col-md-4 col-sm-6">
-                <div class="service">
-                    <i class="fa fa-pencil"></i>
-                    <h3>Soporte 24/7</h3>
-                    <p>Nuestro servicio de soporte garantiza tu sistema o sitio en linea los 365 dias del año, mantén el control todo el tiempo.</p>
-                </div>
-            </div>
-            <!-- /service -->
-
-            <!-- service -->
-            <div class="col-md-4 col-sm-6">
-                <div class="service">
-                    <i class="fa fa-flask"></i>
-                    <h3>Diseño de marca</h3>
-                    <p>Si aun no tienes marca, nuestros diseñadores harán el trabajo por tí.</p>
-                </div>
-            </div>
-            <!-- /service -->
-
-            <!-- service -->
-            <div class="col-md-4 col-sm-6">
-                <div class="service">
-                    <i class="fa fa-facebook"></i>
-                    <h3>Redes sociales</h3>
-                    <p>Manejamos tus redes sociales con la estrategia adecuada a tus necesidades.</p>
-                </div>
-            </div>
-            <!-- /service -->
-
         </div>
         <!-- /Row -->
 
@@ -405,21 +366,22 @@ layout = "default"
 <!-- /Numbers -->
 
 <!-- Pricing -->
+<!--
 <div id="pricing" class="section md-padding">
 
-    <!-- Container -->
+    &lt;!&ndash; Container &ndash;&gt;
     <div class="container">
 
-        <!-- Row -->
+        &lt;!&ndash; Row &ndash;&gt;
         <div class="row">
 
-            <!-- Section header -->
+            &lt;!&ndash; Section header &ndash;&gt;
             <div class="section-header text-center">
                 <h2 class="title">Planes más contratados</h2>
             </div>
-            <!-- /Section header -->
+            &lt;!&ndash; /Section header &ndash;&gt;
 
-            <!-- pricing -->
+            &lt;!&ndash; pricing &ndash;&gt;
             <div class="col-sm-4">
                 <div class="pricing">
                     <div class="price-head">
@@ -444,9 +406,9 @@ layout = "default"
                     </div>
                 </div>
             </div>
-            <!-- /pricing -->
+            &lt;!&ndash; /pricing &ndash;&gt;
 
-            <!-- pricing -->
+            &lt;!&ndash; pricing &ndash;&gt;
             <div class="col-sm-4">
                 <div class="pricing">
                     <div class="price-head">
@@ -471,9 +433,9 @@ layout = "default"
                     </div>
                 </div>
             </div>
-            <!-- /pricing -->
+            &lt;!&ndash; /pricing &ndash;&gt;
 
-            <!-- pricing -->
+            &lt;!&ndash; pricing &ndash;&gt;
             <div class="col-sm-4">
                 <div class="pricing">
                     <div class="price-head">
@@ -498,71 +460,17 @@ layout = "default"
                     </div>
                 </div>
             </div>
-            <!-- /pricing -->
+            &lt;!&ndash; /pricing &ndash;&gt;
 
         </div>
-        <!-- Row -->
+        &lt;!&ndash; Row &ndash;&gt;
 
     </div>
-    <!-- /Container -->
+    &lt;!&ndash; /Container &ndash;&gt;
 
 </div>
+-->
 <!-- /Pricing -->
-
-
-<!-- Testimonial -->
-<div id="testimonial" class="section md-padding">
-
-    <!-- Background Image -->
-    <div class="bg-img" style="background-image: url('/themes/artcodelab/assets/images/background3.jpg');">
-        <div class="overlay"></div>
-    </div>
-    <!-- /Background Image -->
-
-    <!-- Container -->
-    <div class="container">
-
-        <!-- Row -->
-        <div class="row">
-
-            <!-- Testimonial slider -->
-            <div class="col-md-10 col-md-offset-1">
-                <div id="testimonial-slider" class="owl-carousel owl-theme">
-
-                    <!-- testimonial -->
-                    <div class="testimonial">
-                        <div class="testimonial-meta">
-                            <img src="/themes/artcodelab/assets/images/perso1.jpg" alt="">
-                            <h3 class="white-text">John Doe</h3>
-                            <span>Web Designer</span>
-                        </div>
-                        <p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
-                    </div>
-                    <!-- /testimonial -->
-
-                    <!-- testimonial -->
-                    <div class="testimonial">
-                        <div class="testimonial-meta">
-                            <img src="/themes/artcodelab/assets/images/perso2.jpg" alt="">
-                            <h3 class="white-text">John Doe</h3>
-                            <span>Web Designer</span>
-                        </div>
-                        <p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
-                    </div>
-                    <!-- /testimonial -->
-
-                </div>
-            </div>
-            <!-- /Testimonial slider -->
-
-        </div>
-        <!-- /Row -->
-
-    </div>
-    <!-- /Container -->
-
-</div>
-<!-- /Testimonial -->
 
 <!-- Team -->
 <div id="team" class="section md-padding">
@@ -604,7 +512,7 @@ layout = "default"
             <div class="col-sm-4">
                 <div class="team">
                     <div class="team-img">
-                        <img class="img-responsive" src="/themes/artcodelab/assets/images/team2c.jpg" alt="">
+                        <img class="img-responsive" src="/themes/artcodelab/assets/images/team5c.jpg" alt="">
                         <div class="overlay">
                             <div class="team-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -614,7 +522,7 @@ layout = "default"
                         </div>
                     </div>
                     <div class="team-content">
-                        <h3>Román Pamatz</h3>
+                        <h3>Hector Flores</h3>
                         <span>Full-Stack Developer</span>
                     </div>
                 </div>
@@ -640,7 +548,9 @@ layout = "default"
                     </div>
                 </div>
             </div>
+            <!-- /team -->
 
+            <!-- team -->
             <div class="col-sm-4">
                 <div class="team">
                     <div class="team-img">
@@ -654,16 +564,18 @@ layout = "default"
                         </div>
                     </div>
                     <div class="team-content">
-                        <h3>Jorge Villareal</h3>
+                        <h3>Jorge Villarreal</h3>
                         <span>Full-Stack Developer</span>
                     </div>
                 </div>
             </div>
+            <!-- /team -->
 
+            <!-- team -->
             <div class="col-sm-4">
                 <div class="team">
                     <div class="team-img">
-                        <img class="img-responsive" src="/themes/artcodelab/assets/images/team5c.jpg" alt="">
+                        <img class="img-responsive" src="/themes/artcodelab/assets/images/team2c.jpg" alt="">
                         <div class="overlay">
                             <div class="team-social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -673,12 +585,13 @@ layout = "default"
                         </div>
                     </div>
                     <div class="team-content">
-                        <h3>Hector Flores</h3>
+                        <h3>Román Pamatz</h3>
                         <span>Full-Stack Developer</span>
                     </div>
                 </div>
             </div>
             <!-- /team -->
+
 
         </div>
         <!-- /Row -->
@@ -688,6 +601,93 @@ layout = "default"
 
 </div>
 <!-- /Team -->
+
+<!-- Testimonial -->
+<div id="testimonial" class="section md-padding">
+
+    <!-- Background Image -->
+    <div class="bg-img" style="background-image: url('/themes/artcodelab/assets/images/background3.jpg');">
+        <div class="overlay"></div>
+    </div>
+    <!-- /Background Image -->
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Row -->
+        <div class="row">
+
+            <!-- Testimonial slider -->
+            <div class="col-md-10 col-md-offset-1">
+                <div id="testimonial-slider" class="owl-carousel owl-theme">
+
+                    <!-- testimonial -->
+                    <div class="testimonial">
+                        <div class="testimonial-meta">
+                            <img src="/themes/artcodelab/assets/images/perso1.jpg" alt="">
+                            <h3 class="white-text">Emmanuele Conde</h3>
+                            <span>Full-Stack Developer</span>
+                        </div>
+                        <p class="white-text">Aficionado a la tecnología, gammer, geek por naturaleza, programador por vocación, amo el desarrollo y la seguridad informática.</p>
+                    </div>
+                    <!-- /testimonial -->
+
+                    <!-- testimonial -->
+                    <div class="testimonial">
+                        <div class="testimonial-meta">
+                            <img src="/themes/artcodelab/assets/images/perso2.jpg" alt="">
+                            <h3 class="white-text">Hector Flores</h3>
+                            <span>Full-Stack Developer</span>
+                        </div>
+                        <p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+                    </div>
+                    <!-- /testimonial -->
+                    <!-- testimonial -->
+                    <div class="testimonial">
+                        <div class="testimonial-meta">
+                            <img src="/themes/artcodelab/assets/images/perso3.jpg" alt="">
+                            <h3 class="white-text">JC Alcántara</h3>
+                            <span>Full-Stack Developer</span>
+                        </div>
+                        <p class="white-text">Aficionado a la tecnología, gammer, geek por naturaleza, programador por vocación, amo el desarrollo y la seguridad informática.</p>
+                    </div>
+                    <!-- /testimonial -->
+
+                    <!-- testimonial -->
+                    <div class="testimonial">
+                        <div class="testimonial-meta">
+                            <img src="/themes/artcodelab/assets/images/perso4.jpg" alt="">
+                            <h3 class="white-text">Jorge Villarreal</h3>
+                            <span>Full-Stack Developer</span>
+                        </div>
+                        <p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+                    </div>
+                    <!-- /testimonial -->
+
+                    <!-- testimonial -->
+                    <div class="testimonial">
+                        <div class="testimonial-meta">
+                            <img src="/themes/artcodelab/assets/images/perso5.jpg" alt="">
+                            <h3 class="white-text">Román Pamatz</h3>
+                            <span>Full-Stack Developer</span>
+                        </div>
+                        <p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+                    </div>
+                    <!-- /testimonial -->
+
+                </div>
+            </div>
+            <!-- /Testimonial slider -->
+
+        </div>
+        <!-- /Row -->
+
+    </div>
+    <!-- /Container -->
+
+</div>
+<!-- /Testimonial -->
+
 
 <!-- Blog -->
 <div id="blog" class="section md-padding bg-grey">
@@ -700,69 +700,38 @@ layout = "default"
 
             <!-- Section header -->
             <div class="section-header text-center">
-                <h2 class="title">Recents news</h2>
+                <h2 class="title">Noticias recientes</h2>
             </div>
             <!-- /Section header -->
 
-            <!-- blog -->
-            <div class="col-md-4">
-                <div class="blog">
-                    <div class="blog-img">
-                        <img class="img-responsive" src="/themes/artcodelab/assets/images/blog1.jpg" alt="">
+            {% if posts %}
+                {% for post in posts %}
+                    <!-- blog -->
+                    <div class="col-md-4">
+                        <div class="blog">
+                            <div class="blog-img">
+                                <img class="img-responsive" src="{{ post.featured_images.0.getPath }}" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user"></i>{{ post.user.first_name }}</li>
+                                    <li><i class="fa fa-clock-o"></i>{{ post.published_at | makeGodinez }}</li>
+                                    <li><i class="fa fa-tags"></i>{{ post.categories.category.name }}</li>
+                                </ul>
+                                <h3>{{ post.title }}</h3>
+                                <p>{{ post.excerpt }}</p>
+                                <a href="https://www.businessinsider.com/facebook-security-attack-affecting-50-million-users-2018-9">Ver mas...</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blog-content">
-                        <ul class="blog-meta">
-                            <li><i class="fa fa-user"></i>John doe</li>
-                            <li><i class="fa fa-clock-o"></i>18 Oct</li>
-                            <li><i class="fa fa-comments"></i>57</li>
-                        </ul>
-                        <h3>Molestie at elementum eu facilisis sed odio</h3>
-                        <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-                        <a href="blog-single.html">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <!-- /blog -->
+                    <!-- /blog -->
+                <h3></h3>
 
-            <!-- blog -->
-            <div class="col-md-4">
-                <div class="blog">
-                    <div class="blog-img">
-                        <img class="img-responsive" src="/themes/artcodelab/assets/images/blog2.jpg" alt="">
-                    </div>
-                    <div class="blog-content">
-                        <ul class="blog-meta">
-                            <li><i class="fa fa-user"></i>John doe</li>
-                            <li><i class="fa fa-clock-o"></i>18 Oct</li>
-                            <li><i class="fa fa-comments"></i>57</li>
-                        </ul>
-                        <h3>Molestie at elementum eu facilisis sed odio</h3>
-                        <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-                        <a href="blog-single.html">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <!-- /blog -->
+                {% endfor %}
+            {% else %}
+                <h2>En este momento no hay publicaciones</h2>
+            {% endif %}
 
-            <!-- blog -->
-            <div class="col-md-4">
-                <div class="blog">
-                    <div class="blog-img">
-                        <img class="img-responsive"  src="/themes/artcodelab/assets/images/blog3.jpg" alt="">
-                    </div>
-                    <div class="blog-content">
-                        <ul class="blog-meta">
-                            <li><i class="fa fa-user"></i>John doe</li>
-                            <li><i class="fa fa-clock-o"></i>18 Oct</li>
-                            <li><i class="fa fa-comments"></i>57</li>
-                        </ul>
-                        <h3>Molestie at elementum eu facilisis sed odio</h3>
-                        <p>Nec feugiat nisl pretium fusce id velit ut tortor pretium. Nisl purus in mollis nunc sed. Nunc non blandit massa enim nec.</p>
-                        <a href="blog-single.html">Read more</a>
-                    </div>
-                </div>
-            </div>
-            <!-- /blog -->
 
         </div>
         <!-- /Row -->
@@ -803,7 +772,7 @@ layout = "default"
                 <div class="contact">
                     <i class="fa fa-envelope"></i>
                     <h3>Email</h3>
-                    <p>info@artcodelab.com</p>
+                    <p>connect@artcodelab.com</p>
                 </div>
             </div>
             <!-- /contact -->
