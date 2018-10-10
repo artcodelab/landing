@@ -35,7 +35,7 @@ postPage = "blog/post"
                 <div class="about">
                     <i class="fa fa-globe"></i>
                     <h3>Misión</h3>
-                    <p>Ofrecer a nuestros clientes lo mejor de la tecnología, crecer junto con ellos desarrollando soluciones tecnológicas que permitan llegar a mas personas y la mejora de sus procesos. Formar parte de sus proyectos para trabajar como un solo equipo.</p>
+                    <p>Ofrecer a nuestros clientes lo mejor de la tecnología, crecer junto con ellos desarrollando soluciones tecnológicas que permitan llegar a mas personas y ayudar a la mejora de sus procesos. Formar parte de sus proyectos para trabajar como un solo equipo.</p>
                     <!--<a href="#">Read more</a>-->
                 </div>
             </div>
@@ -278,7 +278,7 @@ postPage = "blog/post"
                 <div class="service">
                     <i class="fa fa-cloud"></i>
                     <h3>Soluciones Tecnológicas</h3>
-                    <p>Sómos profesionales de las tecnologías de la información como redes, infraestructura, seguridad, migraciones, data analytics, soporte técnico, data center entre otras soluciones.</p>
+                    <p>Sómos profesionales de las Tecnologías de la Información como Redes, Infraestructura, Seguridad, Migraciones, Data Analytics, Data Center, Big Data, Soporte Técnico entre otras soluciones.</p>
                 </div>
             </div>
             <!-- /service -->
@@ -288,7 +288,7 @@ postPage = "blog/post"
                 <div class="service">
                     <i class="fa fa-shopping-cart"></i>
                     <h3>Soluciones de Marketing</h3>
-                    <p>Ayudamos a nuestros clientes a posicionarse en el mercado con soluciones como: Diseño y Posicionamiento de marca, Redes Sociales, Marketing Estratégico, Marketing Operativo</p>
+                    <p>Ayudamos a nuestros clientes a posicionarse en el mercado con soluciones como: Diseño y Posicionamiento de marca, Redes Sociales, Marketing Estratégico, Marketing Operativo.</p>
                 </div>
             </div>
             <!-- /service -->
@@ -340,7 +340,7 @@ postPage = "blog/post"
             <div class="col-sm-3 col-xs-6">
                 <div class="number">
                     <i class="fa fa-coffee"></i>
-                    <h3 class="white-text"><span class="counter">154</span>K</h3>
+                    <h3 class="white-text"><span class="counter">9</span>K</h3>
                     <span class="white-text">Tazas de cafe ;)</span>
                 </div>
             </div>
@@ -628,7 +628,7 @@ postPage = "blog/post"
                             <h3 class="white-text">Emmanuele Conde</h3>
                             <span>Full-Stack Developer</span>
                         </div>
-                        <p class="white-text">Aficionado a la tecnología, gammer, geek por naturaleza, programador por vocación, amo el desarrollo y la seguridad informática.</p>
+                        <p class="white-text">Aficionado a la tecnología, gammer, geek por naturaleza, programador por vocación, amo el desarrollo y la seguridad informática, gusto por los libros, el cafe, Scifi.</p>
                     </div>
                     <!-- /testimonial -->
 
@@ -649,7 +649,7 @@ postPage = "blog/post"
                             <h3 class="white-text">JC Alcántara</h3>
                             <span>Full-Stack Developer</span>
                         </div>
-                        <p class="white-text">Aficionado a la tecnología, gammer, geek por naturaleza, programador por vocación, amo el desarrollo y la seguridad informática.</p>
+                        <p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
                     </div>
                     <!-- /testimonial -->
 
@@ -700,7 +700,7 @@ postPage = "blog/post"
 
             <!-- Section header -->
             <div class="section-header text-center">
-                <h2 class="title">Noticias recientes</h2>
+                <h2 class="title">Destacado</h2>
             </div>
             <!-- /Section header -->
 
@@ -709,18 +709,24 @@ postPage = "blog/post"
                     <!-- blog -->
                     <div class="col-md-4">
                         <div class="blog">
+                            {% if post.featured_images.0.getPath %}
                             <div class="blog-img">
                                 <img class="img-responsive" src="{{ post.featured_images.0.getPath }}" alt="">
                             </div>
+                            {% endif %}
                             <div class="blog-content">
                                 <ul class="blog-meta">
                                     <li><i class="fa fa-user"></i>{{ post.user.first_name }}</li>
                                     <li><i class="fa fa-clock-o"></i>{{ post.published_at | makeGodinez }}</li>
-                                    <li><i class="fa fa-tags"></i>{{ post.categories.category.name }}</li>
+                                    <li><i class="fa fa-tags"></i>
+                                    {% for category in post.categories %}
+                                    <i>{{ category.name }}</i>{% if not loop.last %}, {% endif %}
+                                    {% endfor %}
+                                    </li>
                                 </ul>
                                 <h3>{{ post.title }}</h3>
                                 <p>{{ post.excerpt }}</p>
-                                <a href="https://www.businessinsider.com/facebook-security-attack-affecting-50-million-users-2018-9">Ver mas...</a>
+                                <a href="{{ post.page }}" target="_blank">Ver...</a>
                             </div>
                         </div>
                     </div>
@@ -762,7 +768,7 @@ postPage = "blog/post"
                 <div class="contact">
                     <i class="fa fa-phone"></i>
                     <h3>Teléfono</h3>
-                    <p>55-8741-1592</p>
+                    <p>55-4693-7323</p>
                 </div>
             </div>
             <!-- /contact -->

@@ -25,10 +25,9 @@ You can edit this content by selecting **Blog** from the administration back-end
             'published' => true
         ]);
 
-        Category::create([
-            'name' => trans('rainlab.blog::lang.categories.uncategorized'),
-            'slug' => 'uncategorized',
-        ]);
+        Category::create(['name' => 'artCodelab', 'slug' => 'artcodelab']);
+        Category::create(['name' => 'Tecnología', 'slug' => 'tecnologia']);
+        Category::create(['name' => 'e-Gobierno', 'slug' => 'e-gobierno']);
     }
 
 }

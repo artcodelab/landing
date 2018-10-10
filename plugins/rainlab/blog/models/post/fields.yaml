@@ -56,6 +56,10 @@ secondaryTabs:
                 field: published
                 condition: checked
 
+        page:
+            tab: rainlab.blog::lang.post.tab_manage
+            label: Liga de la nota
+
         excerpt:
             tab: rainlab.blog::lang.post.tab_manage
             label: rainlab.blog::lang.post.excerpt
