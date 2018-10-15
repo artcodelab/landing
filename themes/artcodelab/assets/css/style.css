@@ -427,7 +427,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 @media only screen and (max-width: 767px) {
     #nav {
-        padding: 0px 0px;
+        padding: 10px 0px;
     }
     #nav.nav-transparent {
         background: #FFF;
