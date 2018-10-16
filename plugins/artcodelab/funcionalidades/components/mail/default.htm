@@ -1,0 +1,14 @@
+<div class="col-md-8 col-md-offset-2">
+    <form class="contact-form"
+          data-request="{{ __SELF__ }}::onSend"
+          data-request-update="'{{ __SELF__ }}::default': '#result'"
+          data-request-flash
+    >
+        <input type="text" name="nombre" class="input" placeholder="Nombre">
+        <input type="text" name="movil" class="input" placeholder="Teléfono para contacto">
+        <input type="email" name="correo" class="input" placeholder="Correo-e para contacto">
+        <input type="text" name="asunto" class="input" placeholder="Asunto de interés o duda">
+        <textarea class="input" name="mensaje" placeholder="Envía aqui detalle de tu solicitud, duda o tema de interés"></textarea>
+        <button class="main-btn">Enviar mensaje</button>
+    </form>
+</div>
