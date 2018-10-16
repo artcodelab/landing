@@ -34,7 +34,6 @@ class Mail extends ComponentBase
                 \Flash::success('Correo enviado!');
         }
 
-
     }
 
 }
