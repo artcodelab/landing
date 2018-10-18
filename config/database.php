@@ -70,7 +70,7 @@ return [
             'port'     => 5432,
             'database' => 'artcodelab',
             'username' => 'postgres',
-            'password' => 'conde',
+            'password' => 'postgres',
             'charset'  => 'utf8',
             'prefix'   => '',
             'schema'   => 'public',

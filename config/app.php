@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'debug' => true,
+    'debug' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -28,7 +28,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'October CMS',
+    'name' => 'artCodelab',
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://artcodelab.test/',
+    'url' => 'https://www.artcodelab.com/',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'key' => 'N5XPAJ0cEqDdcGGMsCqtzHa2Sqy2PGmc',
+    'key' => '19iQTGo6n1x1ky14ysEoT3jMA3Vjyk51',
 
     'cipher' => 'AES-256-CBC',
 
