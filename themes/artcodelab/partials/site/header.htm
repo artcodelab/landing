@@ -53,20 +53,26 @@
     <div class="home-wrapper">
         <div class="container">
             <div class="row">
-
                 <!-- home content -->
                 <div class="col-md-10 col-md-offset-1">
                     <div class="home-content">
                         <h1 class="white-text">Somos artCodelab</h1>
                         <p class="white-text">
-                                                        Una Consultoría de Innovación Tecnológica centrada en las necesidades de las empresas en donde generamos valor y rentabilidad para nuestros clientes.
-                                                    </p>
+                            Una Consultoría de Innovación Tecnológica centrada en las necesidades de las empresas en donde generamos valor y rentabilidad para nuestros clientes.
+                        </p>
+                        {% component 'slider' slide_show_id = 1 %}
+
+
+
                         <!--
                                                 <button class="white-btn">Get Started!</button>
                                                 <button class="main-btn">Learn more</button>
                         -->
+
                     </div>
                 </div>
+
+
                 <!-- /home content -->
 
                 <!-- slider -->
@@ -78,12 +84,12 @@
                                         <ul>
                                             <li class="slide">
                                                 <div class="quoteContainer">
-                                                    <p class="quote-phrase"><span class="quote-marks">"</span> La mejor forma de predecir el futuro es implementándolo!<class="quote-marks">"</span>
+                                                    <p class="quote-phrase"><span class="quote-marks">"</span> <class="quote-marks">"</span>
 
                                                     </p>
                                                 </div>
                                                 <div class="authorContainer">
-                                                    <p class="quote-author">David Heinemeier Hansson // creador de Ruby on Rails</p>
+                                                    <p class="quote-author"></p>
                                                 </div>
                                             </li>
 
@@ -117,6 +123,7 @@
                     <!-- /slider -->
                 </div>
         </div>
+
     </div>
     <!-- /home wrapper -->
 
